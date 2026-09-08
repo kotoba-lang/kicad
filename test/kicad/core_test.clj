@@ -4,7 +4,7 @@
    breaking onto indented lines, kebab→snake tokens, and a small footprint with a pad. KiCad files are
    already S-expressions, so this round-trips with pcbnew/eeschema's own reader."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [kicad.core :as k]))
 
 (deftest atoms-and-inline
