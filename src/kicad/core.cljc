@@ -15,7 +15,7 @@
      [:version 20221018]                         → (version 20221018)
      [:pad \"1\" :smd :roundrect [:at -1 0] [:size 1 1.25]]
        → (pad \"1\" smd roundrect\\n  (at -1 0)\\n  (size 1 1.25)\\n)"
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn- token [s] (str/replace (name s) "-" "_"))   ;; :kicad-pcb → kicad_pcb, :fp-line → fp_line
 (defn- qstr [s] (str \" (-> (str s) (str/replace "\\" "\\\\") (str/replace "\"" "\\\"")) \"))  ;; escape "/\\
