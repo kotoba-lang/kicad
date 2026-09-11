@@ -7,5 +7,5 @@ The implementation lives in `kicad.core`; `kotoba.kicad` is provided as a compat
 ## Test
 
 ```sh
-clojure -M:test
+kbb -M:test
 ```
