@@ -3,7 +3,7 @@
    S-expr surface: bareword tokens vs. quoted strings vs. numbers, inline atom-only forms, nested forms
    breaking onto indented lines, kebab→snake tokens, and a small footprint with a pad. KiCad files are
    already S-expressions, so this round-trips with pcbnew/eeschema's own reader."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.lang.text :as str]
             [kicad.core :as k]))
 
